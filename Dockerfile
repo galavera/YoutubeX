@@ -1,4 +1,4 @@
-FROM ghcr.io/open-webui/pipelines:main
+FROM ghcr.io/open-webui/pipelines:main-cuda
 
 USER root
 
