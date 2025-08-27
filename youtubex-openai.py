@@ -6,7 +6,23 @@ version: 1.2
 license: MIT
 description: A custom pipeline that performs YouTube video search, transcribes audio with WhisperX (small.en by default),
              generates transcript summaries, conducts Q&A over transcripts, and searches within transcript/video content.
-requirements: pydantic==2.7.4, requests, yt-dlp, imageio-ffmpeg, whisperx, langchain==0.3.3, langchain-community==0.3.2, langchain-openai==0.2.2, langchain-core==0.3.10, langchain-text-splitters==0.3.0
+requirements:
+  -f https://download.pytorch.org/whl/cu121
+  torch==2.5.1
+  torchvision==0.20.1
+  torchaudio==2.5.1
+  nvidia-cudnn-cu12>=9.1.1,<9.2 ; platform_system != "Windows"
+  yt-dlp
+  imageio-ffmpeg
+  whisperx
+  pydantic==2.7.4
+  requests
+  langchain==0.3.3
+  langchain-community==0.3.2
+  langchain-openai==0.2.2
+  langchain-core==0.3.10
+  langchain-text-splitters==0.3.0
+  httpx==0.27.*
 """
 
 import os
