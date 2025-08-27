@@ -5,7 +5,7 @@ torchaudio==2.5.1
 nvidia-cudnn-cu12>=9.1.1,<9.2
 yt-dlp
 imageio-ffmpeg
-whisperx
+whisperx==3.1
 pydantic==2.7.4
 requests
 langchain==0.3.3
