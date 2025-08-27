@@ -122,7 +122,7 @@ def transcribe_whisperx(
             "noplaylist": True,
             "skip_download": False,
             "outtmpl": outtmpl,
-            "format": "bestaudio/best",
+            "format": "bestaudio[acodec=opus]/bestaudio[ext=webm]/bestaudio[ext=m4a]/bestaudio/best",
             "concurrent_fragment_downloads": 3,
         }
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
