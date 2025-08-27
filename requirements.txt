@@ -2,7 +2,7 @@
 torch==2.5.1
 torchvision==0.20.1
 torchaudio==2.5.1
-nvidia-cudnn-cu12>=9.1.1,<9.2 ; platform_system != "Windows"
+nvidia-cudnn-cu12>=9.1.1,<9.2
 yt-dlp
 imageio-ffmpeg
 whisperx
